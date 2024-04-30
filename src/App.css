@@ -1,0 +1,29 @@
+body{
+    background-color: #222;
+    color: #fff;
+}
+
+.container{
+    max-width: 500px;
+    margin: 80px auto;
+    min-height: 300px;
+    border: 2px solid chartreuse;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+p{
+    text-transform: uppercase;
+    line-height: 0.75rem;
+}
+
+ul{
+    padding: 0px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.caixa{
+    text-align: center;
+    padding: 0px 20px 40px 20px;
+}

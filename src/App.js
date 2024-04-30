@@ -1,5 +1,6 @@
 import React from 'react';
 import Pokedex from './components/pokedex';
+import "./App.css"
 
 function App() {
 
@@ -36,7 +37,9 @@ function App() {
   if(pokemon.name){
     return (
       <>
-        <Pokedex clasName="row" pokemon={pokemon} controle={{i, Adicionar, Reduzir}}/>
+        <div className='container'>
+          <Pokedex pokemon={pokemon} controle={{i, Adicionar, Reduzir}}/>
+        </div>
       </>
     )
   }

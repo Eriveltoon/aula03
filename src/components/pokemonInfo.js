@@ -6,24 +6,12 @@ function PokemonInfo(props){
 
     return (
         <>
-            <div className='pt-3'>
-                <p className='text-center text-uppercase'>Peso: {pokemon.weight}</p>    
-            </div>
-            
-
-            <div className='pt-3'>
-                <p className='text-center text-uppercase'>Altura: {pokemon.height}</p>
-            </div>
-
-            <div className='d-flex justify-content-center'>
+            <div>
+                <p>Peso: {pokemon.weight}</p>    
+                <p>Altura: {pokemon.height}</p>
                 <ul>
-                    { pokemon.types.map(tipo => <Tipo tipo={tipo} />) }
-                </ul>
-            </div>
-
-            <div className='d-flex justify-content-center'>
-                <ul>
-                    { pokemon.abilities.map(ability => <Ability ability={ability.ability} />) }
+                    <li>{ pokemon.types.map(tipo => <Tipo tipo={tipo} />) }</li>
+                    <li>{ pokemon.abilities.map(ability => <Ability ability={ability.ability} />) }</li>
                 </ul>
             </div>
         </>
